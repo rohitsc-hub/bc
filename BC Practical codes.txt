@@ -1,4 +1,4 @@
-﻿BC Practical codes
+BC Practical codes
 
 
 Prac1:-
@@ -1079,14 +1079,27 @@ contract Addition {
 }
 
 
-  
-
-
-
-
-
-
-
+Folder Structure:
+BC PRACSSSS/
+│
+├── build/
+│   └── contracts/
+│       └── Addition.json
+│
+├── contracts/
+│   ├── .gitkeep
+│   └── add.sol
+│
+├── migrations/
+│   ├── .gitkeep
+│   └── 1_deploy.js
+│
+├── test/
+│   └── .gitkeep
+│
+├── app.js
+├── index.html
+└── truffle-config.js
 
 
 
@@ -1112,7 +1125,31 @@ Commands in terminal inside ur folder:
 * In vs extentions add ‘Live Server’ > at the bottom right click ‘Go live’ > it opens output  on browser
 
 
-  
+Folder Structure:
+practical/
+│
+├── build/
+│   └── contracts/
+│       └── Prime.json
+│
+├── client/
+│   └── index.html
+│
+├── contracts/
+│   ├── .gitkeep
+│   └── Prime.sol
+│
+├── migrations/
+│   ├── .gitkeep
+│   └── 2_deploy.js
+│
+├── test/
+│   └── .gitkeep
+│
+└── truffle-config.js
+
+
+
 
 2_deploy.js
 const Prime = artifacts.require("Prime");
@@ -1228,7 +1265,32 @@ Commands in terminal inside ur folder:
 * Replace contractaddress and add ABI from build in app.js
 * In vs extentions add ‘Live Server’ > at the bottom right click ‘Go live’ > it opens output  on browser
 * For Voting ,Make sure to import multiple accounts (atleast 2-3) to vote (as one acc could vote once) from multiple account
-  
+
+
+Folder Structure:
+prac/
+│
+├── build/
+│   └── contracts/
+│       └── Voting.json
+│
+├── client/
+│   ├── app.js
+│   └── index.html
+│
+├── contracts/
+│   ├── .gitkeep
+│   └── voting.sol
+│
+├── migrations/
+│   ├── .gitkeep
+│   └── 1_deploy.js
+│
+├── test/
+│   └── .gitkeep
+│
+└── truffle-config.js
+
 
 
 
@@ -1784,7 +1846,37 @@ contract CrowdfundingCampaign is Crowdfunding {
 
 Prac12:-
 Create a Basic Solidity Contract using for addition of 2 numbers using Hardhat.
-  
+Folder Structure:
+hardhatPrac12/
+│
+├── artifacts/
+│
+├── cache/
+│
+├── contracts/
+│   └── Addition.sol
+│
+├── ignition/
+│   ├── deployments/
+│   └── modules/
+│       └── Addition.js
+│
+├── node_modules/
+│
+├── test/
+│   └── Addition.ts
+│
+├── types/
+│
+├── .gitignore
+├── app.js
+├── hardhat.config.ts
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
+
 
 
 
@@ -1970,8 +2062,38 @@ At the Bottom Right > Click “Go Live”  (Live Server)
 
 Prac13:-
 Q.1 Create a DAPP for perfect number using hardhat 
-  
 
+
+Folder Structure:
+Prac13/
+│
+├── artifacts/
+│
+├── cache/
+│
+├── contracts/
+│   └── PerfectNumber.sol
+│
+├── frontend/
+│   ├── index.html
+│   └── main.js
+│
+├── ignition/
+│   ├── deployments/
+│   └── modules/
+│       └── PerfectNumber.ts
+│
+├── node_modules/
+│
+├── .gitignore
+├── hardhat.config.ts
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
+
+
+Commands:
 node --version
 npm --version
 npm install --save-dev hardhat
